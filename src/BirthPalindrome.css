@@ -1,0 +1,30 @@
+.main{
+    text-align: center;
+    margin: 3rem;
+    
+}
+
+h3{
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+input{
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+}
+button{
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 12%;
+    font-size: large;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background-color: #93C5FD;
+}
