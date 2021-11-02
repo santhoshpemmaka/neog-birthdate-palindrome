@@ -9,7 +9,7 @@ const reverseStr = (str) => {
   }
   
   const ispalindrome = (str) =>{
-    return str == reverseStr(str);
+    return str === reverseStr(str);
   }
   
   const convertDatetoString = (date) => {
@@ -61,13 +61,13 @@ const reverseStr = (str) => {
   
   
   const isleapyear = (year) => {
-    if(year%400 ==0){
+    if(year%400 === 0){
         return true;
     }
-    if(year%100 == 0){
+    if(year%100 === 0){
         return false;
     }
-    if(year%4 ==0){
+    if(year%4 === 0){
         return true;
     }
   }
@@ -79,7 +79,7 @@ const reverseStr = (str) => {
   
     let dayMonths = [31,28,31,30,31,30,31,31,30,31,30,31];
     
-    if(month == 2){
+    if(month === 2){
         if(isleapyear(year)){
             if(day > 29){
                 day = 1;
@@ -131,7 +131,7 @@ const BirthPalindrome = () =>{
         setBirthday(e.target.value);
     }
     const btnClickhandler = () => {
-        if(getBirthday != ''){
+        if(getBirthday !== ''){
             let listofDate = getBirthday.split('-');
             let date = {
                 day : Number(listofDate[2]),
